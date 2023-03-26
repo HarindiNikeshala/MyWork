@@ -1,0 +1,221 @@
+.outer{
+    height: 100vh;
+    background: url('https://wallpapercave.com/wp/wp2290774.png') no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: #1A2238;
+    margin: auto;
+    margin: 30px auto;
+    display: flex;
+    margin-top: 0;
+    z-index: 99;
+}
+
+#companyname{
+    color: white;
+    padding-left: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+
+.nav a{
+    position: relative;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px; 
+    margin-top: 15px;    
+}
+
+.nav a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+
+}
+
+.nav a:hover::after{
+    transform: scaleX(1)
+}
+
+.nav .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.nav .btnLogin-popup:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+.heading{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.inputs{
+    position: relative;
+    width: 310px;
+    margin: 0px 0;
+    border-bottom: 2px solid #fff;
+}
+.inputs label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputs input:focus~label,
+.inputs input:valid~label{
+    top: -5px;
+}
+
+.inputs input{
+    width: 100%;
+    height: 50px;
+    background :transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+}
+
+
+.inputs .icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 57px;
+   
+}
+
+.body{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#forget{
+    min-width: 100px;
+    margin-left: auto;
+    text-decoration: none;
+    cursor: pointer;
+}
+.t{
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.form-inline label{
+    padding-left: 10px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.btn{
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.container{
+    background-color: black;
+    min-height: 440px;
+    box-shadow: 20px 20px 80px rgb(218, 218, 218);
+    border-radius: 12px;
+    margin-top: 200px;
+    width: 440px;
+    height: 480px;
+}
+
+
+.input-field.error{
+    border: 1px solid red;
+    color: red;
+}
+
+
+
+.fa-eye-slash.btn{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.Signin{
+
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.footer{
+    width: 100%;
+    height: 60px;
+    background-color: #1A2238;
+    margin: 153px auto;
+    display: flex;
+    z-index: 99;
+    align-items: center;
+    padding-left:1000px;
+}
+.footer a{
+    position: relative;
+
+    font-size: 0.8rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px; 
+    margin-top: 4px;    
+}
+
+.footer a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+
+}
+
+.footer a:hover::after{
+    transform: scaleX(1)
+}
+
+
