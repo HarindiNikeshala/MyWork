@@ -1,10 +1,10 @@
-.outer{
+.outer {
     height: 100vh;
-    background: url('https://wallpapercave.com/wp/wp2290774.png') no-repeat;
     background-size: cover;
+    background-color: white;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     height: 80px;
     background-color: #1A2238;
@@ -15,26 +15,24 @@
     z-index: 99;
 }
 
-#companyname{
+#companyname {
     color: white;
     padding-left: 20px;
     margin-top: 15px;
     font-weight: bold;
 }
 
-
-
-.nav a{
+.nav a {
     position: relative;
     font-size: 1.1rem;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 40px; 
-    margin-top: 15px;    
+    margin-left: 40px;
+    margin-top: 15px;
 }
 
-.nav a::after{
+.nav a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -44,14 +42,13 @@
     background: #fff;
     border-radius: 5px;
     transform: scaleX(0);
-
 }
 
-.nav a:hover::after{
+.nav a:hover::after {
     transform: scaleX(1)
 }
 
-.nav .btnLogin-popup{
+.nav .btnLogin-popup {
     width: 130px;
     height: 50px;
     background: transparent;
@@ -66,121 +63,12 @@
     margin-right: 40px;
 }
 
-.nav .btnLogin-popup:hover{
+.nav .btnLogin-popup:hover {
     background-color: #fff;
     color: #000;
 }
 
-
-.heading{
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
-.inputs{
-    position: relative;
-    width: 310px;
-    margin: 0px 0;
-    border-bottom: 2px solid #fff;
-}
-.inputs label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateX(-50%);
-    font-size: 1rem;
-    color: #fff;
-    pointer-events: none;
-    transition: .5s;
-}
-.inputs input:focus~label,
-.inputs input:valid~label{
-    top: -5px;
-}
-
-.inputs input{
-    width: 100%;
-    height: 50px;
-    background :transparent;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    color: #fff;
-}
-
-
-.inputs .icon{
-    position: absolute;
-    right: 8px;
-    color: #fff;
-    font-size: 1.2rem;
-    line-height: 57px;
-   
-}
-
-.body{
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-#forget{
-    min-width: 100px;
-    margin-left: auto;
-    text-decoration: none;
-    cursor: pointer;
-}
-.t{
-    color: white;
-}
-a:hover{
-    text-decoration: none;
-}
-
-.form-inline label{
-    padding-left: 10px;
-    margin: 0;
-    cursor: pointer;
-}
-
-.btn{
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-.container{
-    background-color: black;
-    min-height: 440px;
-    box-shadow: 20px 20px 80px rgb(218, 218, 218);
-    border-radius: 12px;
-    margin-top: 200px;
-    width: 440px;
-    height: 480px;
-}
-
-
-.input-field.error{
-    border: 1px solid red;
-    color: red;
-}
-
-
-
-.fa-eye-slash.btn{
-    border: none;
-    outline: none;
-    box-shadow: none;
-}
-
-.Signin{
-
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    color: #fff;
-}
-
-.footer{
+.footer {
     width: 100%;
     height: 60px;
     background-color: #1A2238;
@@ -188,20 +76,20 @@ a:hover{
     display: flex;
     z-index: 99;
     align-items: center;
-    padding-left:1000px;
+    padding-left: 1000px;
 }
-.footer a{
-    position: relative;
 
+.footer a {
+    position: relative;
     font-size: 0.8rem;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 40px; 
-    margin-top: 4px;    
+    margin-left: 40px;
+    margin-top: 4px;
 }
 
-.footer a::after{
+.footer a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -214,8 +102,153 @@ a:hover{
 
 }
 
-.footer a:hover::after{
+.footer a:hover::after {
     transform: scaleX(1)
 }
 
+.heading {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.inputs {
+    position: relative;
+    width: 335px;
+    margin: 0px 0;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 50px;
+}
+.inputs ::placeholder{
+    color: white;
+}
+
+.inputs label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputs input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    
+}
+
+
+.inputs .icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 57px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+}
+
+.error-email{
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
+
+.body {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.forget {
+    min-width: 100px;
+    margin-left: 114px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.t {
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.form-inline label {
+    padding-left: 10px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container {
+    background-color: #1A2238;
+    min-height: 550px;
+    box-shadow: 20px 20px 80px rgb(218, 218, 218);
+    border-radius: 12px;
+    margin-top: 200px;
+    width: 440px;
+    height: 480px;
+}
+
+
+.input-field.error {
+    border: 1px solid red;
+    color: red;
+}
+
+
+.fa-eye-slash.btn {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.Signin {
+    margin-top: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.or {
+    margin-left: 80px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.iconSignin i {
+    margin-top: -130px;
+    margin-left: 65px;
+    cursor: pointer;
+}
+
+.form-label1 {
+    margin-left: 14px;
+}
+
+.form-label2 {
+    margin-left: 29px;
+}
 

@@ -6,49 +6,67 @@
             <a href="">About</a>
             <a href="">Contact</a>
             <a href="">Help</a>
-            <button class="btnLogin-popup">SignUp</button>
+            <button class="btnLogin-popup" routerLink="/sign-up">SignUp</button>
         </div>
     </div>
     <div class="container">
         <div class="row">
-                <div class="panel">
-                    <div class="heading">
-                        <h2 class="Signin">Sign In</h2>
-                    </div>
-                    <div class="body">
-                        <form action="">
-                                <div class="inputs">
-                                    <span class="icon"><i class="fa-solid fa-envelope" style="color: #fff;"></i></span>
-                                    <input type="email">
-                                    <label for="email" class="form-label">Email</label>
-                                </div>
-                                <div class="inputs">
-                                    <span class="icon"><i class="fa-solid fa-lock" style="color: #fff;"></i></span>
-                                    <input type="password">
-                                    <label for="password" class="form-label">Password</label>
-                                </div>
-                            <div class="form-inline">
-                                <a id="forget" class="font-weight-Bold">Forget Password</a>
-                            </div>
-                            
-                            <div class="t">Don't have account?
-                                <a id="forget" routerLink="/signup">Sign Up</a>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Next</button>
-                        </form>
-                    </div>
+            <div class="panel">
+                <div class="heading">
+                    <h2 class="Signin">Sign In</h2>
                 </div>
+                <div class="body">
+                    <form [formGroup]="LoginForm" (ngSubmit)="submit()">
+                        <div class="inputs form-group">
+                            <span class="icon"><i class="fa-solid fa-envelope" style="color: #fff;"></i></span>
+                            <input type="email" id="email" name="email" formControlName="email" class="form-control feild" placeholder="Email">
+                            <label class="text-danger error-email" *ngIf="getError(LoginForm.get('email'))">
+                                {{
+                                    getError(LoginForm.get('email'))
+                                }}
+                            </label>
+                            <!-- <span class="error" *ngIf="email.invalid && email.touched" class="error">Email field is required.</span> -->
+
+                        </div>
+                        <div class="inputs form-group">
+                            <span class="icon"><i class="fa-solid fa-lock" style="color: #fff;"></i></span>
+                            <input type="password" formControlName="password" class="form-control feild" id="password" name="password" placeholder="Password" maxlength="12">
+                        </div>
+                        <div class="forget">
+                            <a id="forget" class="forget" routerLink="/forgetpassword">Forget Password</a>
+                        </div>
+
+                        <div class="t">Don't have account?
+                            <a id="forget" routerLink="/sign-up">Sign Up</a>
+                        </div>
+                        <div class="form-group">
+                            <!-- [disabled]="!LoginForm.valid" -->
+                            <input  type="submit" value="Login"
+                            class="btn btn-primary form-group">
+                        </div>
+
+                        <div class="or">
+                            <p class="or">OR</p>
+                        </div>
+                        <div class="iconSignin">
+                            <i class="fa-brands fa-square-facebook fa-2xl" style="color: #fff;"></i>
+                            <i class="fa-brands fa-google fa-2xl" style="color: #fff;" (click)="('Google');"></i>
+                            <i class="fa-brands fa-apple fa-2xl" style="color: #fff;"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">
-            <a href="">T & C</a>
-            <a href="">Privacy policy</a>
-            <a href="">Software service Agreement</a>
-            <a href="">Careers</a>
-            <a href="">Contact Us</a>
-            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href="">T & C</a>
+        <a href="">Privacy policy</a>
+        <a href="">Software service Agreement</a>
+        <a href="">Careers</a>
+        <a href="">Contact Us</a>
+        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
     </div>
 </div>

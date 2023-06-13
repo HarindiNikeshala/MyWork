@@ -1,5 +1,6 @@
 .outer{
     height: 100vh;
+    background-color: white;
     background-size: cover;
 }
 
@@ -12,7 +13,6 @@
     display: flex;
     margin-top: 0;
     z-index: 99;
-    margin-bottom: 0;
 }
 
 #companyname{
@@ -21,8 +21,6 @@
     margin-top: 15px;
     font-weight: bold;
 }
-
-
 
 .nav a{
     position: relative;
@@ -38,13 +36,12 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: -10px;
+    bottom: -6px;
     width: 100%;
     height: 3px;
     background: #fff;
     border-radius: 5px;
     transform: scaleX(0);
-
 }
 
 .nav a:hover::after{
@@ -75,14 +72,16 @@
     width: 100%;
     height: 60px;
     background-color: #1A2238;
-    margin: 250px auto;
+    margin: 183px auto;
     display: flex;
     z-index: 99;
     align-items: center;
     padding-left:1000px;
 }
+
 .footer a{
     position: relative;
+
     font-size: 0.8rem;
     color: #fff;
     text-decoration: none;
@@ -91,59 +90,87 @@
     margin-top: 4px;    
 }
 
-.paragraph{
+.footer a::after{
+    content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 18px;
-    background-color: #fff;
-    color: #000;
-    border-radius: 20px;
-    padding: 30px;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+
 }
 
-.paragraph:hover{
+.footer a:hover::after{
+    transform: scaleX(1)
+}
+
+.container{
     background-color: #1A2238;
+    min-height: 440px;
+    box-shadow: 20px 20px 80px rgb(218, 218, 218);
+    border-radius: 12px;
+    margin-top: 100px;
+    width: 440px;
+    height: 550px;
+}
+.heading{
     color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
 }
-
-img{
-    padding-top: 40px;
-    padding-bottom: 40px;
+.paragraph{
+    color: #fff;
+    text-align: center;
 }
-
-.card{
-    margin-top: 250px;
-    transform: translate(150%, 20%);
-    width: 25%;
+.p1{
+    margin-bottom: 30px;
+}
+.Phone{
+    background-color: #fff;
     border: none;
+    border-radius: 4px;
+    height: 30px;
 }
-
-.card-title{
-    text-align-last: center;
-    padding-bottom: 20px;
+.arrow{
+    margin-left: 10px;
 }
-
-.icon{
-    align-self: center;
-    margin-bottom: 20px;
-}
-
-h5{
-    font-weight: bold;
-    font-size: 25px;
-
-}
-
-.tick{
-    font-weight: bold;
-}
+/* .p2{
+    background-color: #fff;
+    color: #1A2238;
+    border-radius: 5px;
+    width: 160px;
+    height: 30px;
+    margin-left: 130px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 50px;
+} */
 
 .btn{
-    width: 100%;
+    width: 80%;
     margin-top: 20px;
+    margin-left: 40px;
 }
-a{
+
+.p4{
+    margin-top: 30px;
+}
+
+.resendotp{
     text-decoration: none;
+}
+
+.otp{
+    margin-top: 30px;
+    margin-left: 125px;
+}
+
+.timer{
+    margin-top: 30px;
+    color: #fff;
 }
